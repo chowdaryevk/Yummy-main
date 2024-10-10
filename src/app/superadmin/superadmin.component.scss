@@ -1,0 +1,59 @@
+.side-bar {
+  width: 268px;
+  background: #eff0f5;
+  height: 100%;
+  padding: 0;
+  float: left;
+  border-right: 1px solid #dadada;
+  .side-menu-list {
+    padding: 0 30px 0 0;
+    margin-top: 16px;
+    .side-menu-item {
+      cursor: pointer;
+      a.dash-item {
+        text-decoration: none;
+        color: #323232;
+        font-size: 15px;
+        display: block;
+        line-height: 48px;
+        padding: 0 16px;
+        outline: none;
+        border: 0;
+        &:focus {
+          outline: none;
+          border: 0;
+        }
+      }
+      .mat-list-option.active {
+        background: #fff;
+      }
+    }
+  }
+}
+
+.department-sidebar {
+  float: left;
+  width: calc(100% - 270px);
+}
+.department-sidebar-left .mat-sort-header-arrow {
+  margin: 18px 0 0 6px;
+}
+mat-toolbar.department-tool-bar.mat-toolbar {
+  height: 42px;
+  line-height: 42px;
+  background: #f9f9f8;
+  border-bottom: 1px solid #cccdcd;
+  .mat-sort-header-arrow {
+    margin: 18px 0 0 6px;
+  }
+}
+.admintab-icon {
+  width: 24px !important;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0px 8px 3px 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}

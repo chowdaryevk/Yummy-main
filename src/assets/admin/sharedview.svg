@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-4.000000, -196.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-4-Copy-2" transform="translate(0.000000, 192.000000)">
+                <path d="M9.01685639,20 L5.6,20 C4.7163444,20 4,19.2836556 4,18.4 L4,11 L9.01685639,11 L9.01685639,20 Z M18.4,20 L10.9969826,20 L10.9969826,11 L20,11 L20,18.4 C20,19.2836556 19.2836556,20 18.4,20 Z M20,8.9955935 L4,8.9955935 L4,5.6 C4,4.7163444 4.7163444,4 5.6,4 L18.4,4 C19.2836556,4 20,4.7163444 20,5.6 L20,8.9955935 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

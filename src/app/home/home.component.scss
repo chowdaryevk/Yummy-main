@@ -1,0 +1,68 @@
+.bg {
+    height: 500px;
+    width: 30%;
+    display: block;
+    overflow: hidden;
+    background: #ff033c;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    top: 0;
+}
+
+.cafe {
+    color: #ff033c !important;
+}
+
+.transparentbg {
+    background-image: url(../../assets/Isolation_Mode.png);
+    background-size: 50%; 
+}
+
+.transparentbg::after {
+    background: red;
+    position: absolute;
+    display: block;
+    width: 24%;
+    height: 68%;
+    content: "";
+    top: 0;
+    right: 0;
+}
+
+.home-text {
+    border-left: 5px solid #ff033c;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    line-height: 25px;
+    color: #2e245c !important;
+}
+
+.animated {
+    z-index: 2052;
+    position: relative;
+}
+.categories-row {
+    .col-sm-2 {
+        text-align: center;
+    }
+.categories {
+    text-transform: uppercase;
+    text-align: center;
+}
+}
+
+.animatedc{
+    z-index: 999; 
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}

@@ -1,0 +1,25 @@
+<div class="side-bar">
+  <div class="side-menu-list">
+    <div class="side-menu-item" *ngFor="let admintype of adminurlData">
+      <div class="mat-list-option" routerLinkActive="active">
+        <a
+          class="side-menu-text"
+          [routerLink]="[admintype.router]"
+          class="dash-item"
+        >
+          <i
+            class="admintab-icon"
+            [style.backgroundImage]="
+              'url(' + svgIconPath + '/' + admintype.icon + ')'
+            "
+            [ngClass]="admintype.router"
+          ></i>
+          <span class="tab-name">{{ admintype.name }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="department-sidebar">
+  <router-outlet></router-outlet>
+</div>
