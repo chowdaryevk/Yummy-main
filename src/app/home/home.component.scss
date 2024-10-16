@@ -14,13 +14,18 @@
     color: #ff033c !important;
 }
 
+.login {
+    color: #ff033c !important;
+    font-weight: 600;
+}
+
 .transparentbg {
     background-image: url(../../assets/Isolation_Mode.png);
     background-size: 50%; 
 }
 
 .transparentbg::after {
-    background: red;
+    background: #FE043C;
     position: absolute;
     display: block;
     width: 24%;
@@ -28,6 +33,44 @@
     content: "";
     top: 0;
     right: 0;
+}
+
+.section-2 {    
+.transparentbg::after {
+    height: 100%;
+}
+.homeheading {
+    font-size: 3rem;
+}
+}
+
+.section-3 {    
+    padding-top: 2rem !important;
+}
+
+@media screen and (max-width: 400px) {
+    .transparentbg::after {
+        height: 250px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width:768px) {
+    .transparentbg::after {
+        height: 355px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-link {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+  }
+}
+
+.subheading {
+    color: #2e245c !important;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .home-text {
@@ -44,8 +87,9 @@
     position: relative;
 }
 .categories-row {
-    .col-sm-2 {
+    .col-sm-4.col-md-2 {
         text-align: center;
+        cursor: pointer;
     }
 .categories {
     text-transform: uppercase;

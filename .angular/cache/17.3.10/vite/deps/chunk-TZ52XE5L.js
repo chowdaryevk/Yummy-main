@@ -1,13 +1,10 @@
 import {
   ScrollingModule,
   ViewportRuler
-} from "./chunk-BRW7LFUK.js";
+} from "./chunk-ORCTGKN6.js";
 import {
   Platform
 } from "./chunk-7QTELPAC.js";
-import {
-  coerceBooleanProperty
-} from "./chunk-LWYKZWGA.js";
 import {
   _DisposeViewRepeaterStrategy,
   _RecycleViewRepeaterStrategy,
@@ -15,6 +12,9 @@ import {
   _ViewRepeaterOperation,
   isDataSource
 } from "./chunk-CM6OU3DT.js";
+import {
+  coerceBooleanProperty
+} from "./chunk-LWYKZWGA.js";
 import {
   Directionality
 } from "./chunk-A6FP3NNI.js";
@@ -2775,4 +2775,4 @@ export {
   CdkTableModule,
   mixinHasStickyInput
 };
-//# sourceMappingURL=chunk-RILNILNW.js.map
+//# sourceMappingURL=chunk-TZ52XE5L.js.map

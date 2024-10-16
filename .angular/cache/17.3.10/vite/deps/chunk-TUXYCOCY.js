@@ -1,10 +1,10 @@
 import {
+  MatCommonModule
+} from "./chunk-BKSYDOEC.js";
+import {
   DomSanitizer,
   HttpClient
 } from "./chunk-AQCJMNMS.js";
-import {
-  MatCommonModule
-} from "./chunk-BKSYDOEC.js";
 import {
   DOCUMENT
 } from "./chunk-EF4L27W3.js";
@@ -959,4 +959,4 @@ export {
   MatIcon,
   MatIconModule
 };
-//# sourceMappingURL=chunk-A6XXP6MW.js.map
+//# sourceMappingURL=chunk-TUXYCOCY.js.map

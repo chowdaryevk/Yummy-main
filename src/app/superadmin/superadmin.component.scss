@@ -1,18 +1,39 @@
+.showsidebar {
+  .tab-name {
+    display: none;
+  }
+  .side-bar {
+    width: 60px;
+  }
+}
+
+.navbtn {
+  cursor: pointer;
+}
 .side-bar {
+  -webkit-transition: width .1s ease-in-out;
+  -moz-transition: width .1s ease-in-out;
+  -o-transition: width .1s ease-in-out;
+  transition: width .1s ease-in-out;
   width: 268px;
-  background: #eff0f5;
+  background: #000;
   height: 100%;
+  min-height: 730px;
   padding: 0;
   float: left;
-  border-right: 1px solid #dadada;
+  border-right: 0px solid #dadada; 
+  box-shadow: 0px 0px 5px #999;
   .side-menu-list {
-    padding: 0 30px 0 0;
+    padding: 0 0px 0 0;
     margin-top: 16px;
+    .sidebarlogo {
+      color: #ffffff !important;
+    }
     .side-menu-item {
       cursor: pointer;
       a.dash-item {
         text-decoration: none;
-        color: #323232;
+        color: #ffffff;
         font-size: 15px;
         display: block;
         line-height: 48px;
@@ -25,7 +46,9 @@
         }
       }
       .mat-list-option.active {
-        background: #fff;
+        background: #FE043C;
+        min-width: 60px;
+        color: #ffffff;
       }
     }
   }
@@ -34,6 +57,7 @@
 .department-sidebar {
   float: left;
   width: calc(100% - 270px);
+  //padding: 1rem 2rem;
 }
 .department-sidebar-left .mat-sort-header-arrow {
   margin: 18px 0 0 6px;
@@ -56,4 +80,26 @@ mat-toolbar.department-tool-bar.mat-toolbar {
   margin: 0px 8px 3px 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-toggler.superadmin {
+      display: block !important;
+  }
+}
+
+.navbar-toggler.superadmin:focus {
+  box-shadow: none !important;
+}
+
+.content {
+  padding: 1.5rem;
+  min-height: 600px;
+}
+
+.navbar {
+  .search {
+    height: 40px;
+    border: 0;
+  }
 }

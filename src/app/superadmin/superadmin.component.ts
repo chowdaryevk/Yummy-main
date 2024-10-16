@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './superadmin.component.scss',
 })
 export class SuperadminComponent {
+  showsidebar: boolean = false;
   svgIconPath = '../../assets/admin';
+  toggleNav() {
+    this.showsidebar = !this.showsidebar;
+  }
   adminurlData = [
     {
       name: 'Menu Management',

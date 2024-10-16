@@ -5,15 +5,15 @@ import {
   supportsScrollBehavior
 } from "./chunk-7QTELPAC.js";
 import {
-  coerceElement,
-  coerceNumberProperty
-} from "./chunk-LWYKZWGA.js";
-import {
   ArrayDataSource,
   _RecycleViewRepeaterStrategy,
   _VIEW_REPEATER_STRATEGY,
   isDataSource
 } from "./chunk-CM6OU3DT.js";
+import {
+  coerceElement,
+  coerceNumberProperty
+} from "./chunk-LWYKZWGA.js";
 import {
   BidiModule,
   Directionality
@@ -1661,4 +1661,4 @@ export {
   CdkScrollableModule,
   ScrollingModule
 };
-//# sourceMappingURL=chunk-BRW7LFUK.js.map
+//# sourceMappingURL=chunk-ORCTGKN6.js.map

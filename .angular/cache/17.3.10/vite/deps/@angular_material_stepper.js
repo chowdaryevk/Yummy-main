@@ -1,8 +1,7 @@
 import {
   MatIcon,
   MatIconModule
-} from "./chunk-A6XXP6MW.js";
-import "./chunk-AQCJMNMS.js";
+} from "./chunk-TUXYCOCY.js";
 import {
   animate,
   animateChild,
@@ -40,6 +39,7 @@ import {
 import {
   Platform
 } from "./chunk-7QTELPAC.js";
+import "./chunk-AQCJMNMS.js";
 import "./chunk-LWYKZWGA.js";
 import {
   Directionality

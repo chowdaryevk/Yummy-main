@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 html,
 body {
   height: 100%;
@@ -109,7 +109,10 @@ body {
 .sitename {
   color: #ff033c !important;
 }
-
+h2 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -231,7 +234,10 @@ body {
 .search-2 {
   position: relative;
   width: 100%;
+  min-width: 185px;
+  input {
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.04);
+  }
 }
 
 .search-2 input {
@@ -262,42 +268,12 @@ body {
   top: 0px;
   border: none;
   height: 42px;
-  background-color: red;
+  background-color: #FE043C;
   color: #fff;
   width: 85px;
   font-weight: 600;
   border-radius: 45px 4px 4px 4px;
   padding-left: 1rem;
-}
-
-@media (max-width:800px) {
-  .search-1 input {
-      border-right: none;
-      border-bottom: 1px solid #eee
-  }
-
-  .search-2 i {
-      left: 4px
-  }
-
-  .search-2 input {
-      padding-left: 14px
-  }
-
-  .search-2 button {
-      height: 37px;
-      top: 5px;
-
-  }
-}
-
-.searchbtn {
-
-}
-
-.leelas {
-  background-size: 50% auto;
-  background-color: red;
 }
 
 a {
@@ -526,6 +502,13 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+.navbar-nav {
+  .nav-link {
+    color: var(--nav-color) !important;
+    font-weight: 600 !important;
+  }
+}
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -689,6 +672,7 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
+
 
   .navmenu a,
   .navmenu a:focus {
@@ -1149,8 +1133,15 @@ section,
   font-family: "Karantina", system-ui !important;
   font-weight: 700;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color:#FE043C !important; 
+}
+
+
+.footertext {
+  color: #555555 !important;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 .loginbtn {

@@ -10,6 +10,7 @@ import { KitchenManagementComponent } from './components/kitchen-management/kitc
 import { OrderManagementComponent } from './components/order-management/order-management.component';
 import { VendorManagementComponent } from './components/vendor-management/vendor-management.component';
 import { StaffManagementComponent } from './components/staff-management/staff-management.component';
+import { MaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -21,11 +22,12 @@ import { StaffManagementComponent } from './components/staff-management/staff-ma
     KitchenManagementComponent,
     OrderManagementComponent,
     VendorManagementComponent,
-    StaffManagementComponent
+    StaffManagementComponent,
   ],
   imports: [
     CommonModule,
-    SuperadminRoutingModule
+    SuperadminRoutingModule,
+    MaterialModule
   ]
 })
 export class SuperadminModule { }
