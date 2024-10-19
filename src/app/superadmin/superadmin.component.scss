@@ -1,10 +1,22 @@
 .showsidebar {
-  .tab-name {
+  .tab-name, .footertext {
     display: none;
   }
-  .side-bar {
-    width: 60px;
+  .sidebarlogo {
+    span {
+      display: none;
+    }
   }
+
+  .side-bar {
+    width: 70px;
+  }
+
+}
+.department-sidebar.showfullwidth {
+  float: left;
+  width: calc(100% - 70px);
+  //padding: 1rem 2rem;
 }
 
 .navbtn {
@@ -18,16 +30,15 @@
   width: 268px;
   background: #000;
   height: 100%;
-  min-height: 730px;
   padding: 0;
   float: left;
   border-right: 0px solid #dadada; 
-  box-shadow: 0px 0px 5px #999;
   .side-menu-list {
     padding: 0 0px 0 0;
     margin-top: 16px;
     .sidebarlogo {
       color: #ffffff !important;
+      font-size: 2.2rem;
     }
     .side-menu-item {
       cursor: pointer;
@@ -57,6 +68,7 @@
 .department-sidebar {
   float: left;
   width: calc(100% - 270px);
+  align-items: stretch;
   //padding: 1rem 2rem;
 }
 .department-sidebar-left .mat-sort-header-arrow {
@@ -72,14 +84,14 @@ mat-toolbar.department-tool-bar.mat-toolbar {
   }
 }
 .admintab-icon {
-  width: 24px !important;
-  height: 24px;
+  width: 32px !important;
+  height: 32px;
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
-  margin: 0px 8px 3px 0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 3px;
+  margin: 0px 10px 3px 0;
+//box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
 }
 
 @media (min-width: 576px) {
@@ -93,13 +105,31 @@ mat-toolbar.department-tool-bar.mat-toolbar {
 }
 
 .content {
-  padding: 1.5rem;
-  min-height: 600px;
+  padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+}
+
+.main-container {
+  display: flex;
+  height: auto;
+  min-height: 100%;
+  .sidebar p{
+    background: #000;
+  }
 }
 
 .navbar {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
   .search {
     height: 40px;
     border: 0;
   }
 }
+.side-bar {
+  .footertext {
+    position: absolute;
+    bottom: 0;
+    padding-left: 1rem;
+  }
+}
+

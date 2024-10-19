@@ -1,65 +1,94 @@
-<div id="sidebar" [ngClass]="showsidebar? 'showsidebar':'leela'">  
-<div class="side-bar">
-  <div class="side-menu-list">
-    <div class="text-center my-4">
-      <a class="sidebarlogo karantina-bold" href="javascript:void(0)">Yummyfied</a>
-    </div>
-    <div class="side-menu-item" *ngFor="let admintype of adminurlData">
-      <div class="mat-list-option" routerLinkActive="active">
-        <a
-          class="side-menu-text"
-          [routerLink]="[admintype.router]"
-          class="dash-item"
+<div class="main-container">
+<div id="sidebar" class="sidebar" [ngClass]="showsidebar ? 'showsidebar' : ''">
+  <div class="side-bar">
+    <div class="side-menu-list">
+      <div class="text-center my-3">
+        <a class="sidebarlogo karantina-bold" href="#"
+          >Y<span>ummyfied</span></a
         >
-          <i
-            class="admintab-icon"
-            [style.backgroundImage]="
-              'url(' + svgIconPath + '/' + admintype.icon + ')'
-            "
-            [ngClass]="admintype.router"
-          ></i>
-          <span class="tab-name">{{ admintype.name }}</span>
-        </a>
+      </div>
+      <div class="side-menu-item" *ngFor="let admintype of adminurlData">
+        <div class="mat-list-option" routerLinkActive="active">
+          <a
+            class="side-menu-text"
+            [routerLink]="[admintype.router]"
+            class="dash-item"
+          >
+            <img
+              class="admintab-icon"
+              src="
+                {{svgIconPath}}/{{admintype.icon}}
+              "
+              [ngClass]="admintype.router"
+            />
+            <span class="tab-name">{{ admintype.name }}</span>
+          </a>
+        </div>
       </div>
     </div>
+        
   </div>
+  <p class="footertext">&copy; 2024 Yummyfied. All Rights Reserved.</p>
 </div>
-</div>
-<div class="department-sidebar">
+<div class="department-sidebar"  [ngClass]="showsidebar ? 'showfullwidth' : ''"> 
+
   <nav class="navbar navbar-expand-sm navbar-light bg-white ps-4">
-    <button (click)="toggleNav()" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" class="navbar-toggler superadmin">
-      <span class="navbar-toggler-icon"></span></button>
-      <form class="navbar m-auto navbar-left" action="/action_page.php">
-        <div class="form-group">
-          <input type="text" class="form-control search" placeholder="Search here">
-        </div>
-       
-      </form>
-      <ul class="navbar-nav ms-auto pe-3">
-           <!-- <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Categories</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">About Us</a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Username
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Signout</a></li>
-          </ul>
-        </li>
-    </ul>      
-</nav>
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
-<footer id="footer" class="footer dark-background">
-  <div class="container">
-      <p class="footertext">
-          &copy; 2024 Yummyfied. All Rights Reserved.
-      </p>
+    <button
+      (click)="toggleNav()"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mynavbar"
+      class="navbar-toggler superadmin"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar m-auto navbar-left">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control search"
+          placeholder="Search here..."
+          [(ngModel)]="searchValue"
+        />
+      </div>
+    </div>
+    <ul class="navbar-nav ms-auto pe-3">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Username
+          <img
+            src="https://via.placeholder.com/30"
+            alt="User Logo"
+            style="
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              margin-left: 5px;
+              object-fit: cover;
+            "
+          />
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/home"
+              routerLinkActive="active"
+              >Signout</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="content">
+    <router-outlet></router-outlet>
   </div>
-</footer>
+</div>
 </div>

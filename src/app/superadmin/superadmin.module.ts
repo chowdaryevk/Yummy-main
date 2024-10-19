@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SuperadminRoutingModule } from './superadmin-routing.module';
 import { SuperadminComponent } from './superadmin.component';
 import { MenuManagementComponent } from './components/menu-management/menu-management.component';
@@ -11,7 +10,7 @@ import { OrderManagementComponent } from './components/order-management/order-ma
 import { VendorManagementComponent } from './components/vendor-management/vendor-management.component';
 import { StaffManagementComponent } from './components/staff-management/staff-management.component';
 import { MaterialModule } from '../material.module';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,10 +23,6 @@ import { MaterialModule } from '../material.module';
     VendorManagementComponent,
     StaffManagementComponent,
   ],
-  imports: [
-    CommonModule,
-    SuperadminRoutingModule,
-    MaterialModule
-  ]
+  imports: [CommonModule, SuperadminRoutingModule, MaterialModule, SharedModule],
 })
-export class SuperadminModule { }
+export class SuperadminModule {}

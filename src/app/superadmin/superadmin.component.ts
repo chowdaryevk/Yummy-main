@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ADMIN_URL_DATA } from './constants/super-admin';
 
 @Component({
   selector: 'app-superadmin',
@@ -7,45 +8,10 @@ import { Component } from '@angular/core';
 })
 export class SuperadminComponent {
   showsidebar: boolean = false;
+  searchValue: string = '';
   svgIconPath = '../../assets/admin';
+  adminurlData = ADMIN_URL_DATA;
   toggleNav() {
     this.showsidebar = !this.showsidebar;
   }
-  adminurlData = [
-    {
-      name: 'Menu Management',
-      router: 'menu-management',
-      icon: 'departments.svg',
-    },
-    {
-      name: 'User Management',
-      router: 'user-management',
-      icon: 'channels.svg',
-    },
-    {
-      name: 'Category Management',
-      router: 'category-management',
-      icon: 'departments.svg',
-    },
-    {
-      name: 'Kitchen Management',
-      router: 'kitchen-management',
-      icon: 'channels.svg',
-    },
-    {
-      name: 'Order Management',
-      router: 'order-management',
-      icon: 'departments.svg',
-    },
-    {
-      name: 'Vendor Management',
-      router: 'vendor-management',
-      icon: 'channels.svg',
-    },
-    {
-      name: 'Staff Management',
-      router: 'staff-management',
-      icon: 'channels.svg',
-    }
-  ];
 }

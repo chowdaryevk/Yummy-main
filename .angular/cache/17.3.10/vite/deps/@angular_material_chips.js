@@ -2,15 +2,8 @@ import {
   MAT_FORM_FIELD,
   MatFormField,
   MatFormFieldControl
-} from "./chunk-RCZ3BGQS.js";
-import {
-  FormGroupDirective,
-  NG_VALUE_ACCESSOR,
-  NgControl,
-  NgForm,
-  Validators
-} from "./chunk-NVLCBOOB.js";
-import "./chunk-AG4WPH2D.js";
+} from "./chunk-A67LOLY3.js";
+import "./chunk-25QX3O55.js";
 import {
   ErrorStateMatcher,
   MAT_RIPPLE_GLOBAL_OPTIONS,
@@ -18,7 +11,17 @@ import {
   MatRippleLoader,
   MatRippleModule,
   _ErrorStateTracker
-} from "./chunk-BKSYDOEC.js";
+} from "./chunk-JHMLUCQS.js";
+import {
+  FormGroupDirective,
+  NG_VALUE_ACCESSOR,
+  NgControl,
+  NgForm,
+  Validators
+} from "./chunk-EKD7ENEW.js";
+import {
+  Directionality
+} from "./chunk-Z7VJQNP7.js";
 import {
   BACKSPACE,
   DELETE,
@@ -28,15 +31,12 @@ import {
   SPACE,
   TAB,
   hasModifierKey
-} from "./chunk-5CMKDGUZ.js";
-import "./chunk-7QTELPAC.js";
-import "./chunk-LWYKZWGA.js";
-import {
-  Directionality
-} from "./chunk-A6FP3NNI.js";
+} from "./chunk-BD7FVQ3L.js";
+import "./chunk-DDCBF6VT.js";
+import "./chunk-TNAZQPQX.js";
 import {
   DOCUMENT
-} from "./chunk-EF4L27W3.js";
+} from "./chunk-DVU53F2F.js";
 import {
   ANIMATION_MODULE_TYPE,
   Attribute,
@@ -58,19 +58,13 @@ import {
   Output,
   QueryList,
   Self,
-  Subject,
   ViewChild,
   ViewEncapsulation$1,
   booleanAttribute,
   forwardRef,
   inject,
-  merge,
   numberAttribute,
   setClassMetadata,
-  startWith,
-  switchMap,
-  take,
-  takeUntil,
   ɵɵInheritDefinitionFeature,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
@@ -105,7 +99,18 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-W4LVFCKP.js";
+} from "./chunk-FUGTDLQW.js";
+import {
+  merge
+} from "./chunk-JWFVXZTN.js";
+import "./chunk-GY475XLT.js";
+import {
+  Subject,
+  startWith,
+  switchMap,
+  take,
+  takeUntil
+} from "./chunk-FQPGRUHQ.js";
 
 // node_modules/@angular/material/fesm2022/chips.mjs
 var _c0 = ["*", [["mat-chip-avatar"], ["", "matChipAvatar", ""]], [["mat-chip-trailing-icon"], ["", "matChipRemove", ""], ["", "matChipTrailingIcon", ""]]];

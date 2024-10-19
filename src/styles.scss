@@ -1,9 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
 html,
 body {
   height: 100%;
-  background: #FDEBDC;  
+  background: #fdebdc;
 }
 body {
   margin: 0;
@@ -38,7 +38,6 @@ i.admintab-icon {
   background-size: 12px !important;
 }
 
-
 /**
 * Template Name: Yummy
 * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
@@ -53,13 +52,15 @@ i.admintab-icon {
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Amatic SC",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #fdebdd; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
@@ -70,7 +71,7 @@ i.admintab-icon {
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #2e245c;  /* The default color of the main navmenu links */
+  --nav-color: #2e245c; /* The default color of the main navmenu links */
   --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -83,6 +84,22 @@ i.admintab-icon {
 .light-background {
   --background-color: #fdf3ea;
   --surface-color: #ffffff;
+}
+
+.mdc-text-field {
+  background: #ffffff;
+}
+
+.mat-mdc-form-field-subscript-wrapper, .mat-mdc-form-field-bottom-align::before {
+  height: 0.25rem;
+}
+
+.mdc-text-field--outlined .mat-mdc-form-field-infix, .mdc-text-field--no-label .mat-mdc-form-field-infix {
+  padding-top: 0.7rem !important;
+}
+
+.form-fields-container {
+  margin-bottom: 1rem;
 }
 
 .dark-background {
@@ -191,16 +208,15 @@ h2 {
   color: #2e245c !important;
 }
 
-
 .search {
   background-color: #fff;
   padding: 0px;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .search-1 {
   position: relative;
-  width: 100%
+  width: 100%;
 }
 
 .search-1 input {
@@ -209,13 +225,13 @@ h2 {
   width: 100%;
   padding-left: 34px;
   padding-right: 10px;
-  border-right: 2px solid #eee
+  border-right: 2px solid #eee;
 }
 
 .search-1 input:focus {
   border-color: none;
   box-shadow: none;
-  outline: none
+  outline: none;
 }
 
 .search-1 i {
@@ -223,12 +239,12 @@ h2 {
   top: 12px;
   left: 5px;
   font-size: 24px;
-  color: #eee
+  color: #eee;
 }
 
 ::placeholder {
   color: #eee;
-  opacity: 1
+  opacity: 1;
 }
 
 .search-2 {
@@ -236,7 +252,7 @@ h2 {
   width: 100%;
   min-width: 185px;
   input {
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -245,13 +261,13 @@ h2 {
   border: none;
   width: 100%;
   padding-left: 18px;
-  padding-right: 100px
+  padding-right: 100px;
 }
 
 .search-2 input:focus {
   border-color: none;
   box-shadow: none;
-  outline: none
+  outline: none;
 }
 
 .search-2 i {
@@ -259,7 +275,7 @@ h2 {
   top: 12px;
   left: -10px;
   font-size: 24px;
-  color: #eee
+  color: #eee;
 }
 
 .search-2 button {
@@ -268,7 +284,7 @@ h2 {
   top: 0px;
   border: none;
   height: 42px;
-  background-color: #FE043C;
+  background-color: #fe043c;
   color: #fff;
   width: 85px;
   font-weight: 600;
@@ -302,7 +318,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -526,12 +545,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu>ul>li {
+  .navmenu > ul > li {
     white-space: nowrap;
     padding: 15px 24px;
   }
 
-  .navmenu>ul>li:last-child {
+  .navmenu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -558,7 +577,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu>ul>li>a:before {
+  .navmenu > ul > li > a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -571,13 +590,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
+  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: color-mix(in srgb, var(--nav-color) 80%, #2e245c 50%);
@@ -617,11 +636,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -633,7 +652,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -673,7 +692,6 @@ h6 {
     z-index: 9998;
   }
 
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
@@ -685,7 +703,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
-    transition: 0.3s;   
+    transition: 0.3s;
   }
 
   .navmenu a i,
@@ -736,7 +754,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -763,7 +781,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -818,7 +836,8 @@ h6 {
 
 .footer .copyright {
   padding-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -948,11 +967,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -972,7 +991,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 56px;
@@ -1134,9 +1152,8 @@ section,
   font-weight: 700;
   font-style: normal;
   font-size: 2.5rem;
-  color:#FE043C !important; 
+  color: #fe043c !important;
 }
-
 
 .footertext {
   color: #555555 !important;
@@ -1145,6 +1162,12 @@ section,
 }
 
 .loginbtn {
-  background: #FE043C;
+  background: #fe043c;
   color: #ffffff;
 }
+
+.mdc-text-field {
+  border: 1px solid #f5f5f5 !important;
+  height: 48px !important;
+}
+

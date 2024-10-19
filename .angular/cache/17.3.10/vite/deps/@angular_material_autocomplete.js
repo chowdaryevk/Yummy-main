@@ -1,15 +1,12 @@
 import {
-  MAT_FORM_FIELD,
-  MatFormField
-} from "./chunk-RCZ3BGQS.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-NVLCBOOB.js";
-import {
   Overlay,
   OverlayConfig,
   OverlayModule
-} from "./chunk-RNNNLBYP.js";
+} from "./chunk-NMAOE7LL.js";
+import {
+  MAT_FORM_FIELD,
+  MatFormField
+} from "./chunk-A67LOLY3.js";
 import {
   animate,
   group,
@@ -17,7 +14,7 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-AG4WPH2D.js";
+} from "./chunk-25QX3O55.js";
 import {
   MAT_OPTGROUP,
   MAT_OPTION_PARENT_COMPONENT,
@@ -28,10 +25,21 @@ import {
   MatOptionSelectionChange,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition
-} from "./chunk-BKSYDOEC.js";
+} from "./chunk-JHMLUCQS.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-EKD7ENEW.js";
 import {
   TemplatePortal
-} from "./chunk-6NENHAQK.js";
+} from "./chunk-6HRKURO2.js";
+import {
+  CdkScrollableModule,
+  ViewportRuler
+} from "./chunk-LL2G73QP.js";
+import "./chunk-D2KC7IXK.js";
+import {
+  Directionality
+} from "./chunk-Z7VJQNP7.js";
 import {
   ActiveDescendantKeyManager,
   DOWN_ARROW,
@@ -42,24 +50,16 @@ import {
   addAriaReferencedId,
   hasModifierKey,
   removeAriaReferencedId
-} from "./chunk-5CMKDGUZ.js";
-import {
-  CdkScrollableModule,
-  ViewportRuler
-} from "./chunk-ORCTGKN6.js";
+} from "./chunk-BD7FVQ3L.js";
 import {
   Platform,
   _getEventTarget
-} from "./chunk-7QTELPAC.js";
-import "./chunk-CM6OU3DT.js";
-import "./chunk-LWYKZWGA.js";
-import {
-  Directionality
-} from "./chunk-A6FP3NNI.js";
+} from "./chunk-DDCBF6VT.js";
+import "./chunk-TNAZQPQX.js";
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-EF4L27W3.js";
+} from "./chunk-DVU53F2F.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -77,27 +77,14 @@ import {
   NgZone,
   Optional,
   Output,
-  Subject,
-  Subscription,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
   booleanAttribute,
-  defer,
-  delay,
-  filter,
   forwardRef,
-  fromEvent,
   inject,
-  map,
-  merge,
-  of,
   setClassMetadata,
-  startWith,
-  switchMap,
-  take,
-  tap,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
@@ -125,7 +112,25 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-W4LVFCKP.js";
+} from "./chunk-FUGTDLQW.js";
+import {
+  defer,
+  fromEvent,
+  merge
+} from "./chunk-JWFVXZTN.js";
+import "./chunk-GY475XLT.js";
+import {
+  Subject,
+  Subscription,
+  delay,
+  filter,
+  map,
+  of,
+  startWith,
+  switchMap,
+  take,
+  tap
+} from "./chunk-FQPGRUHQ.js";
 
 // node_modules/@angular/material/fesm2022/autocomplete.mjs
 var _c0 = ["panel"];

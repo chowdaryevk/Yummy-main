@@ -1,58 +1,131 @@
-<form class="formwidth">
-  <div class="row">
-    <div class="col-6">
-                <mat-form-field class="fullwidth" appearance="fill">
-                    <mat-label>Item ID</mat-label>
-                    <input matInput placeholder="Item ID" id="firstname"name="firstname">
-                </mat-form-field>
-            </div>      
-        <div class="col-6">
-                <mat-form-field class="fullwidth" appearance="fill">
-                    <mat-label>Item Code</mat-label>
-                    <input matInput placeholder="Item Code" id="lastname" name="lastname">
-                </mat-form-field>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-        <mat-form-field class="fullwidth" appearance="fill">
-            <mat-label>Item Description</mat-label>
-            <textarea matInput placeholder="Item Description" id="address"  name="address"></textarea>
-        </mat-form-field>
-    </div>      
-    <div class="col-6">
-        <mat-form-field class="fullwidth" appearance="fill">
-            <mat-label>Item Ingredients</mat-label>
-            <input matInput placeholder="Item Ingredients" id="city"  name="city">
-        </mat-form-field>
-    </div>
+<div class="flex-end" *ngIf="!isAddMenu">
+  <button mat-raised-button (click)="addMenu()" color="primary">Add Menu</button>
 </div>
-<div class="row">
-    <div class="col-6">
-<mat-form-field class="fullwidth" appearance="fill">
-    <mat-label>Item Price</mat-label>
-    <input matInput placeholder="Item Price" id="state"   name="state">
-</mat-form-field>
-</div>      
-<div class="col-6">
-<mat-form-field class="fullwidth" appearance="fill">
-    <input matInput #postalcode maxlength="5" placeholder="Postal Code" id="postalcode"
-     name="postalcode">
-    <!-- <md-hint align="end">
-        {{postalcode.value.length}} / 5
-    </md-hint> -->
-</mat-form-field>
-</div>
-</div>
-<div class="row">
-    <div class="col-6">
-    <input type="file" placeholder="Attachment" id="state"   name="state">
 
-</div>      
+<div *ngIf="isAddMenu">
+  <button mat-raised-button color="primary" (click)="goBack()">
+    <span> < Back</span>
+  </button>
 </div>
-<div class="row mt-5">
-    <div class="col-6">
-        <button  mat-raised-button type="submit" >Submit</button>
+
+<div class="mt-2" *ngIf="!isAddMenu">
+  <app-table
+    [columns]="columns"
+    [buttons]="buttons"
+    [data]="data"
+    [filter]="true"
+    [filterPlaceholder]="'Filter any value'"
+    [pagination]="[5, 25, 100]"
+    [pageSize]="5"
+    (filteredData)="applyFilter($event)"
+    (buttonClick)="buttonClick($event)"
+  >
+  </app-table>
+</div>
+
+<ng-container *ngIf="isAddMenu">
+  <form [formGroup]="menuManagementForm" (ngSubmit)="onSubmit()" class="mt-2 ">
+    <div class="row my-3">
+      <div class="col-6 ps-0">
+        <mat-radio-group formControlName="deliveryMethod" required>
+          <mat-radio-button value="floorDelivery"
+            >Floor Delivery</mat-radio-button
+          >
+          <mat-radio-button value="takeAway">Take Away</mat-radio-button>
+        </mat-radio-group>
+      </div>
     </div>
-</div>
-</form>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Item ID</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="itemId"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Item Code</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="itemCode"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Item Ingredients</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="itemIngredients"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Item Description</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="itemDescription"
+            required
+          >
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Item Price</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="itemPrice"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Postal Code</mat-label>
+        <mat-form-field class="fullwidth" appearance="outline">
+          <input
+            matInput
+            formControlName="postalcode"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="form-fields-container col-7">
+        <mat-label class="col-3">Add Item Image</mat-label>
+        <input type="file" formControlName="attachment" />
+      </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="form-fields-container col-7">
+            <mat-label class="col-3"></mat-label>
+        <button mat-raised-button type="submit" class="w-100" color="warn">Submit</button>
+      </div>
+    </div>
+  </form>
+</ng-container>
